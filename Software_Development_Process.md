@@ -81,7 +81,7 @@ The process of developing software is generally broken down into the following p
 
 - ### Waterfall Model
 
-- ![image-20200609165904707](/Users/Nathan/Library/Application Support/typora-user-images/image-20200609165904707.png)
+- ![](Software_Development_Process.assets/Screen Shot 2020-06-09 at 1.37.48 PM-1738380.png)
 
 - - **Main drawback**:
 
@@ -98,9 +98,9 @@ The process of developing software is generally broken down into the following p
 
 ### Incremental Model
 
-![image-20200609165938132](/Users/Nathan/Library/Application Support/typora-user-images/image-20200609165938132.png)
+![](Software_Development_Process.assets/Screen Shot 2020-06-09 at 1.50.21 PM.png)
 
-![image-20200609165948839](/Users/Nathan/Library/Application Support/typora-user-images/image-20200609165948839.png)
+![](Software_Development_Process.assets/Screen Shot 2020-06-09 at 1.56.06 PM.png)
 
 - Cost of accommodating changing requirements is reduced
 
@@ -174,7 +174,7 @@ The process of developing software is generally broken down into the following p
 
 ### Iterative Development
 
-![image-20200609170024166](/Users/Nathan/Library/Application Support/typora-user-images/image-20200609170024166.png)
+![](Software_Development_Process.assets/Screen Shot 2020-06-09 at 2.21.06 PM.png)
 
 
 
@@ -218,8 +218,8 @@ The process of developing software is generally broken down into the following p
 
   - Requirements are represented as user stories
 
-    ![image-20200609170040648](/Users/Nathan/Library/Application Support/typora-user-images/image-20200609170040648.png)
+    ![](Software_Development_Process.assets/Screen Shot 2020-06-09 at 2.41.24 PM.png)
 
 
 
- ![image-20200609170050835](/Users/Nathan/Library/Application Support/typora-user-images/image-20200609170050835.png)
+ ![](Software_Development_Process.assets/Screen Shot 2020-06-09 at 2.52.13 PM.png)
