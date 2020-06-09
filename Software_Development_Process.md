@@ -81,7 +81,7 @@ The process of developing software is generally broken down into the following p
 
 - ### Waterfall Model
 
-- ![](Software_Development_Process.assets/Screen Shot 2020-06-09 at 1.37.48 PM-1738380.png)
+- ![](images/Screen Shot 2020-06-09 at 1.37.48 PM.png)
 
 - - **Main drawback**:
 
@@ -98,9 +98,9 @@ The process of developing software is generally broken down into the following p
 
 ### Incremental Model
 
-![](Software_Development_Process.assets/Screen Shot 2020-06-09 at 1.50.21 PM.png)
+![](images/Screen Shot 2020-06-09 at 1.50.21 PM.png)
 
-![](Software_Development_Process.assets/Screen Shot 2020-06-09 at 1.56.06 PM.png)
+![](images/Screen Shot 2020-06-09 at 1.56.06 PM.png)
 
 - Cost of accommodating changing requirements is reduced
 
@@ -174,9 +174,7 @@ The process of developing software is generally broken down into the following p
 
 ### Iterative Development
 
-![](Software_Development_Process.assets/Screen Shot 2020-06-09 at 2.21.06 PM.png)
-
-
+![](images/Screen Shot 2020-06-09 at 2.21.06 PM.png)
 
 ### Agile Development
 
@@ -218,8 +216,6 @@ The process of developing software is generally broken down into the following p
 
   - Requirements are represented as user stories
 
-    ![](Software_Development_Process.assets/Screen Shot 2020-06-09 at 2.41.24 PM.png)
+    ![](images/Screen Shot 2020-06-09 at 2.41.24 PM.png)
 
-
-
- ![](Software_Development_Process.assets/Screen Shot 2020-06-09 at 2.52.13 PM.png)
+![](images/Screen Shot 2020-06-09 at 2.52.13 PM.png)
