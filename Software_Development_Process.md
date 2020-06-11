@@ -294,7 +294,7 @@ Based on the transformation of a mathematical specification through different re
 
 
 
-## Our software process
+## Our software process (For this class)
 
 - requirements elicitation
 - analysis
