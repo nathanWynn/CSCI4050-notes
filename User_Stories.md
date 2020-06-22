@@ -23,6 +23,29 @@ There are many different types of methods, but they all include the following su
 
 ![image-20200611140144475](images/image-20200611140144475.png)
 
+### Types of Requirements
+
+- **functional requirements**
+  - describe interaction between system and environment independent from the implementation
+    - "an operator must be able to define a new game"
+- **nonfunctional requirements**
+  - aspects not directly related to functional behavior
+    - "response time must be less than 1 sec"
+  - types:
+    - usability
+    - reliability
+    - performance
+      - response time
+    - supportability
+      - adaptability
+      - maintainability
+      - modifiability
+- **constraints**
+  - imposed by client or environment
+    - "the implementation language must be X"
+
+
+
 ## User stories
 
 **A user story is a short, simple description of a feature told from the perspective of the person who desires the new capability, usually a user or customer.**
@@ -59,7 +82,31 @@ For example:
 
 - **confirmation**: *acceptance tests* confirm that the story was delivered correctly.
 
-  
+
+### Tecniques to elicit requirements
+
+- **interview**: formal or informal with stakeholders
+- **task analysis:** observing end users in their operational environment
+- **user storires:** short descriptions of features from the perspective of users
+- **scenarios:** describe the use of the system as a series of interactions between a concrete end user and the system
+- **use cases:** abstractions that describe a class of scenarios
+
+### Requirements Validation
+
+- **correctness**
+  - the requriements represents the client's view
+- **completeness**
+  - all possible scenarios in which the system can be used are described
+- **consistency**
+  - no requirments conflict
+- **clarity**
+  - requirements can only be interpreted in one way
+- **realism**
+  - requiements can be implemented and delivered
+- **traceability**
+  - each system behavior can be traced to a set of functional requirements
+- **verifiability**
+  - should be written so that it can be tested
 
 ### Details as conditions of satisfaction
 
@@ -117,5 +164,135 @@ Usually a user story is accompanied by confirmation criteria. **Acceptance crite
 
 - **Theme**: a collection of related user stories
 - **Epic**: A large user story
+- **Scenario**: a concrete, focused, informal **description of a single feature of the system used by a single actor**
 
-- **Scenario**: 
+
+
+#### Scenario
+
+- tool to illustrate one possible use of an existing or proposed system
+- can include text, vid, pics, or story boards
+
+
+
+Scenario example:
+
+- Jim withdraws 100 from his checking account
+  - 1. jim presses withdraw
+    2. system displays the screen
+    3. jim presses digit buttons 1, 0, 0
+    4. system displays the screen with jim's checking and savings accounts
+    5. etc...
+
+
+
+#### Scenario based design
+
+	- **requirements elicitation:** as-is scenario, visionary scenario
+	- **client acceptance test:** evaluation scenario
+	- **System deployment:** training scenario
+
+
+
+#### Use cases and scenarios
+
+- A **use case** is a definition of a goal oriented set of interactions webtween actors and system
+- an **actor** is a party outside the system that interacts with it
+- UC is initiated by an actor
+- a **scenario** is an instance of a use case, and represents a single path through the use case
+
+### Actors
+
+- an actor may be a class of users
+- a **primary** actor has a goal requiring the assistance of the system and initates a use case
+- a **secondary** actor is one from which the system needs assistance
+- actors can be used in user stories
+
+
+
+### Use Case Description
+
+- **basic sequence** of interactions between actors and system
+- may include **variants** of the sequence
+- may include **exceptions**
+- system is treated as a black box, and interactions with the system, including system responses, are percieved from outside the system
+
+
+
+#### How to find use cases
+
+- select a narrow vertical slice of the system (one scenario)
+
+- select a horizontal slice (many scenarios) to devine scope
+- use mockups as visual support
+- find out what the user does
+  - task observation >>> questionaires
+
+![](images/usecase.png)
+
+
+
+
+
+## UML Use Case Diagrams
+
+### Actors
+
+- abstraction of an external entity
+
+
+
+### Use case associations
+
+- types
+  - includes
+  - extends
+  - generalization
+
+Use cases can be related:
+
+- **includes relationship**
+  - to represent functional behavior common to more than one use case
+- **extends relationship**
+  - to represent seldom invoked use case fragments or exceptional functionality
+  - an extension is typically not a complete use case
+
+if a use case is **necessary** in the process of another, it's an includes relationship. 
+
+- Example: Create Account --> invoke Send Verificaiton Email (Create Account cannot finish unless Send Verification Email is called)
+
+If a use case is optional or only sometimes included in another's process, it's an extends relationship.
+
+- example: checkout --> invoke PayPal (chould be more than one payment option)
+
+  
+
+### Include: functional decomposition
+
+- problem
+  - a function in the original problem statement is too complex
+- solution
+  - describe the function as the aggregation of a set of simpler functions. the associated use case is decomposed into shorter use cases
+
+### Include: reuse of existing functionality
+
+- problem
+  - theere may be overlaps among use cases
+- solution
+  - see slides
+
+
+
+**Important note: don't draw sequence of actions in use case diagrams**
+
+Another important note: preconditions are not an **include** relationship
+
+
+
+![Screen Shot 2020-06-18 at 2.56.25 PM](images/Screen Shot 2020-06-18 at 2.56.25 PM.png)
+
+caller --> request ambulance -->
+
+operator --> enter info from caller, or 
+
+--extends-->enter info from gps
